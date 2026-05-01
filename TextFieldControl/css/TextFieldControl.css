@@ -1,0 +1,52 @@
+/* ============================================================
+   TextFieldControl – styles
+   Matches Fluent UI / Dynamics 365 look-and-feel
+   ============================================================ */
+
+.textfield-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* Label -------------------------------------------------------- */
+.textfield-label {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    /* color is set dynamically via the labelColor property */
+}
+
+/* Input -------------------------------------------------------- */
+.textfield-input {
+    border: 1px solid #8a8886;
+    border-radius: 2px;
+    font-size: 14px;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 8px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color: #323130;
+    outline: none;
+    transition: border-color 0.1s ease-in-out;
+}
+
+.textfield-input:hover {
+    border-color: #323130;
+}
+
+.textfield-input:focus {
+    border-color: #0078d4;
+    border-width: 2px;
+    padding: 0 7px; /* compensate for the extra border pixel */
+}
+
+.textfield-input:disabled {
+    background-color: #f3f2f1;
+    border-color: #c8c6c4;
+    color: #a19f9d;
+    cursor: not-allowed;
+}
